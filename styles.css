@@ -13,67 +13,12 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-
-.tools-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tool-item {
-    width: 45%;
-    margin: 10px;
-    padding: 15px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-}
-
-@media screen and (max-width: 600px) {
-    .tool-item {
-        width: 100%;
-    }
-}
-
-/* Navigation Bar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #333;
     padding: 10px 20px;
-}
-
-.logo {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
 }
 
 .nav-links {
@@ -99,15 +44,34 @@ footer {
     border-radius: 5px;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: lightblue;
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tool-item {
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -125,13 +89,8 @@ footer {
 
     .menu-toggle {
         display: block;
+        font-size: 26px;
+        color: white;
+        cursor: pointer;
     }
 }
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Welcome to My AI Tools</h1>
-        <p>Explore powerful AI tools for learning, research, and productivity.</p>
-        <a href="#tools" class="btn">Get Started</a>
-    </div>
-</section>
