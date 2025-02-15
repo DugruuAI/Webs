@@ -1,18 +1,23 @@
+/* यह पूरे पेज के लिए Default Styling सेट करता है */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Font सेट करता है */
+    margin: 0;  /* बाहर की खाली जगह हटाता है */
+    padding: 0; /* अंदर की खाली जगह हटाता है */
+    background-color: #f4f4f4; /* बैकग्राउंड का रंग */
+    color: #333; /* टेक्स्ट का रंग */
 }
+/* अगर Background Color बदलना हो, तो "background-color: #f4f4f4;" बदलें */
 
+/* Header Section का Styling */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #333; /* बैकग्राउंड रंग */
+    color: white; /* टेक्स्ट रंग */
+    padding: 10px 0; /* अंदर की खाली जगह */
+    text-align: center; /* टेक्स्ट को बीच में लाना */
 }
+/* Header का रंग बदलना हो, तो "background-color: #333;" बदलें */
 
+/* Navigation Bar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,58 +25,45 @@ header {
     background: #333;
     padding: 10px 20px;
 }
+/* Navigation Bar का रंग बदलने के लिए "background: #333;" को बदलें */
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    background: #ff9800;
-    border-radius: 5px;
-}
-
+/* Hero Section (Welcome Section) */
 .hero {
     text-align: center;
     padding: 50px;
-    background: lightblue;
+    background: lightblue; /* बैकग्राउंड रंग */
 }
+/* Hero Section का बैकग्राउंड बदलने के लिए "background: lightblue;" बदलें */
 
+/* AI Tools List */
 .tools-list {
     display: flex;
     flex-wrap: wrap;
 }
+/* अगर आप Tools को एक Column में दिखाना चाहते हैं, तो "display: flex;" को "display: block;" कर दें */
 
+/* AI Tool Box */
 .tool-item {
-    width: 45%;
+    width: 45%; /* Box की चौड़ाई */
     margin: 10px;
     padding: 15px;
     background-color: #f0f0f0;
     border-radius: 8px;
 }
+/* Tool Box की चौड़ाई बढ़ाने के लिए "width: 45%;" को "width: 50%;" या "width: 100%;" करें */
 
+/* Footer Section */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
 }
+/* Footer का बैकग्राउंड बदलने के लिए "background-color: #333;" बदलें */
 
-/* Responsive Design */
+/* Responsive Design (Mobile Screens) */
 @media screen and (max-width: 768px) {
+    /* Small Screen के लिए Navigation Bar */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -83,14 +75,19 @@ footer {
         text-align: center;
     }
 
+    /* जब Active होगा तो दिखेगा */
     .nav-links.active {
         display: flex;
     }
 
+    /* Mobile Menu Button (≡) को Show करना */
     .menu-toggle {
         display: block;
-        font-size: 26px;
-        color: white;
-        cursor: pointer;
+    }
+
+    /* AI Tools को Full Width करना */
+    .tool-item {
+        width: 100%;
     }
 }
+/* अगर Mobile View में Tools की Width को छोटा करना है, तो ".tool-item { width: 100%; }" को बदलें */
