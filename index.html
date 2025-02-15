@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+          <!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">My AI Tools</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AI Tools</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+</header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Website</title>
@@ -32,19 +45,7 @@
                 <h3>Tool 2</h3>
                 <p>Description of AI Tool 2.</p>
             </div>
-            <!-- Navigation Bar -->
-<header>
-    <nav class="navbar">
-        <div class="logo">My AI Tools</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">AI Tools</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="menu-toggle">&#9776;</div>
-    </nav>
-</header>
+      
             <!-- Add more tools as needed -->
         </div>
     </section>
@@ -57,3 +58,8 @@
     </footer>
 </body>
 </html>
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    });
+</script>
